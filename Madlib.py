@@ -8,6 +8,7 @@ def madlib_gen():
             #checks if the user enter the value as a word, and converts it into a number    
                 if story_select in ['one','two','three']:
                     int_story_select = {'one': 1, 'two': 2, 'three': 3}[story_select]
+                    break
                 else:
                     print("Please enter a value between one and three")    
             elif story_select.isnumeric():
@@ -22,6 +23,7 @@ def madlib_gen():
         print(f'You selected story {story_select}')
         return int_story_select   
     
+
     #function to ask user to input something for the story
     def storyadd(name):
         vowels = ['i','o','u','a','e']
@@ -37,21 +39,19 @@ def madlib_gen():
             if story_item.isalpha():
                 return story_item.lower()
             else:
-                print('Please enter a word')         
+                print('Please enter a word')                   
 
-    story_selector() #calling story selecting function           
-
-    if story_selector == 1: 
+    if story_selector() == 1: 
         name = storyadd('name')
         verb = storyadd('verb')
         animal = storyadd('animal')
         story = 'During my data science bootcamp, I got bored so I decided to go out and ' + verb + '. Whilst I was out I forgot to pick up my ' + \
         animal + ' from my friend ' + name.capitalize() + ' so I had to leave. ' 
-    elif story_selector == 2:
+    elif story_selector() == 2:
         object = storyadd('object')
         name = storyadd('name')
         story = 'During my GP appointment, I met my friend ' + name.capitalize() + ' and left behind ' + object + '.'
-    else:
+    elif story_selector() == 3:
         adjective1 = storyadd('adjective')
         noun1 = storyadd('noun')
         animal = storyadd('animal')
