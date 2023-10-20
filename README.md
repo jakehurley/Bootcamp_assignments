@@ -8,3 +8,12 @@
 # This programme lets the user pick from one of three stories. For each story they can decide which wordw they wish to fill in the blanks. The chosen story is then printed
 ## Assignment: Adventure game
 # A word based adventure game where the player can roam into various rooms. In each room there's a description of what is there and also the directions you can take to go to another room.
+
+## Assignment: Linear regression
+# Attempted to use linear regression on a tricky data from JFK airport departures
+
+## Assignment: Data Visualisation
+# Used matplotlib to analyse and present data onn earthquakes in the month ~ 9/23
+
+## Assignment: Classifer models
+# Used the notorious titanic dataset to understand classification models such as logistic regression, naive bayes and linear discriminant analysis
